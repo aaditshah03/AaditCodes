@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p {
+font-size: 60px;
+}
+</style>
+</head>
+<body>
+<p id="demo"></p>
+<script>
+let countdownDate = new Date("February 10, 2022 00:00:00").getTime();
+let x = setInterval(function() {
+let now = new Date().getTime();
+let tLeft = countdownDate - now;
+let days = Math.floor();
+let hours = Math.floor();
+let minutes = Math.floor();
+let seconds = Math.floor();
+document.getElementById("demo").innerHTML = days + "d " 
++ hours + "h " + minutes + "m " + seconds + "s ";
+	if (tLeft < 0) {
+		clearInterval(x);
+		document.getElementById("demo").innerHTML = "TIME OUT";
+	}
+}, );
+</script>
+
+</body>
+</html>
